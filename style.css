@@ -1,0 +1,78 @@
+header{
+   background-image:url("sakura.gif");
+   border:1px solid #1a000d;
+   background-size:cover;
+   border-radius:16px;
+}
+
+body{
+   margin:0;
+   padding:0;
+   background-color:#e3c1dd;
+}
+a:link,a:visited{
+      font-size:29px;
+      text-decoration:none;
+      position:relative;
+      top:30px;
+      margin:0;
+      padding:0;
+}
+
+/*external font*/
+@font-face{
+font-family:magic;
+src:url('magic.ttf');
+}
+
+.hpage{
+   postition:relative;
+   font-weight:bold;
+   position:relative;
+   bottom:4px;
+   font-style:italic;
+}
+
+.logoclr{
+    color:#121011;
+    font-size:32px;
+    text-shadow:3px 3px grey;
+}
+
+.menubar{
+     position:relative;
+     left:285px;
+     bottom:45px;
+}
+
+.menupage{
+     padding:30px;
+     margin:15px;
+     display:inline-block !important;
+}
+
+footer{
+    background-color:black;
+    color:grey;
+    height:350px;
+}
+.saita{
+    margin-left:120px;
+}
+
+.note{
+   font-family:magic;
+   text-align:center;
+   font-size:15px;
+}
+
+.luffy{
+   margin-left:120px;
+   margin-top:90px;
+}
+
+.note2{
+    font-family:magic;
+    text-align:center;
+    font-size:15px;
+}
