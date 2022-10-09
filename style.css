@@ -48,7 +48,7 @@ src:url('magic.ttf');
 .menupage{
      padding:30px;
      margin:15px;
-     display:inline-block !important;
+     display:inline-block;
 }
 
 footer{
