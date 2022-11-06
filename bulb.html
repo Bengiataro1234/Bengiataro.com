@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bulb</title>
+<style>
+.bulb-off{
+    width:80px;
+    height:80px;
+    border:1px solid black;
+    border-radius:100%;
+    margin-left:120px;
+}
+
+.bulb-on{
+    width:80px;
+    height:80px;
+    background-color:yellow;
+    border:1px solid black;
+    border-radius:100%;
+    margin-left:120px;
+}
+
+.bulb-foot{
+    background-color:black;
+    width:30px;
+    height:25px;
+    margin-left:145px;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div class="bulb-off" id="bulb">
+</div>
+<div class="bulb-foot">
+</div>
+<script>
+
+let bulb = document.getElementById("bulb");
+bulb.addEventListener("click",function() {
+        bulb.classList.toggle("bulb-on");
+});
+
+</script>
+</body>
+</html>

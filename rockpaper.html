@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>rock paper scissor</title>
+<style>
+.btns{
+     display:flex;
+     margin-top:300px;
+     margin-left:60px;
+}
+
+.btns button{
+     margin:10px;
+     padding:10px;
+     background-color:green;
+     color:white;
+     border:1px solid black;
+     transition:0.5s ease;
+     border-radius:8px;
+}
+
+.btns button:hover{
+     background-color:white;
+     color:black;
+}
+
+#result{
+    margin-left:130px;
+}
+
+#a-i{
+    margin-left:120px;
+    font-size:30px;
+}
+
+#user{
+    margin-top:100px;
+    margin-left:120px;
+    font-size:30px;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>computer:</p>
+<p id="a-i"></p>
+<p id="user"></p>
+<div class="btns">
+<button id="rock-btn">ROCK</button>
+<button id="paper-btn">PAPER</button>
+<button id="scissor-btn">SCISSOR</button>
+</div>
+<h1 id="result"></h1>
+<script>
+let display = document.getElementById("a-i");
+let list = ["rock","paper","scissor"];
+let rock = document.getElementById("rock-btn");
+let rl = document.getElementById("result");
+let paper = document.getElementById("paper-btn");
+let scissor = document.getElementById("scissor-btn");
+let user = document.getElementById("user");
+
+rock.addEventListener("click", () => {
+       result("rock");
+});
+
+paper.addEventListener("click", () => {
+       result("paper");
+});
+
+scissor.addEventListener("click",() => {
+       result("scissor");
+});
+
+let random = Math.floor( Math.random() * 3);
+
+const result = (uservalue) => {
+      display.innerHTML = list[random];
+      user.innerHTML = uservalue;
+      r = uservalue + list[random];
+      
+      if(r == "rockscissor") {
+           rl.innerHTML = "you won";
+      }else if(r == "rockrock") {
+           rl.innerHTML = "draw";
+      }else if(r == "rockpaper") {
+           rl.innerHTML = "you lose";
+      }else if(r == "paperrock") {
+           rl.innerHTML = "you won";
+      }else if(r == "paperpaper") {
+           rl.innerHTML = "draw";
+      }else if(r == "paperscissor") {
+           rl.innerHTML = "you lose";
+      }else if(r == "scissorpaper") {
+           rl.innerHTML = "you win";
+      }else if(r == "scissorscissor") {
+           rl.innerHTML = "draw";
+      }else {
+           rl.innerHTML = "you lose";
+      }
+  setTimeout(reset,3000);
+};
+
+function reset() {
+  window.location.reload();
+};
+</script>
+</body>
+</html>

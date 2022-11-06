@@ -1,0 +1,67 @@
+*{
+       margin:0;
+       padding:0;
+}
+
+body{
+       background-color:#1A1E1F;
+}
+
+header .header-item{
+       background-color:black;
+       width:200px;
+       height:200px;
+       border-radius:25px;
+       margin:180px 0 0 75px;
+}
+
+header .header-item .btn{       
+       margin-left:40px;
+}
+
+.header-item .btn #btn-play{
+       padding:10px;
+       border:1px solid white;
+       color:white;
+       background-color:black;
+       border-radius:10px;
+}
+
+.header-item .btn #btn-play:hover{
+       background-color:white;
+       color:black;
+}
+
+.header-item .btn #btn-pause{
+       padding:10px;
+       border:1px solid white;
+       color:white;
+       background-color:black;
+       border-radius:10px;
+}
+
+.header-item .btn #btn-pause:hover{
+       background-color:white;
+       color:black;      
+}
+
+header .header-item .bg-image{
+       background-image:url("/storage/emulated/0/Pictures/Weathering-With-You.jpg");
+       background-repeat:no-repeat;
+       background-size:contain;
+       border-radius:8px;
+       width:180px;
+       height:140px;
+       margin-left:10px;
+}
+
+.meter{
+      background-image:url("/storage/emulated/0/Download/932fd00d9b43753061c47739f0cc777b.gif");
+      background-repeat:no-repeat;
+      background-size:contain;
+      width:140px;
+      height:80px;
+      margin-top:20px;
+      margin-left:110px;
+      display:none;
+}
